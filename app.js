@@ -5,6 +5,7 @@ const navSU = require('./src/routes/signupRoute');//returning from signup router
 const navLN = require('./src/routes/loginRoute');//returning from login router page
 
 const app = express();
+const port = process.env.port || 2000;
 
 const nav = [
     {
@@ -58,4 +59,4 @@ app.get('/',function(req,res)
     });
 });
 
-app.listen(2000);   
+app.listen(port,()=>{console.log("server ready at" + port)});   

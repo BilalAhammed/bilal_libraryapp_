@@ -5,7 +5,7 @@ const navSU = require('./src/routes/signupRoute');//returning from signup router
 const navLN = require('./src/routes/loginRoute');//returning from login router page
 
 const app = express();
-const port = process.env.port || 2000;
+const PORT = process.env.PORT || 2000;
 
 const nav = [
     {
